@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz dia dos namorados! ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Sophia & Aguiar</h1>
+  </header>
+  
+  <!-- Conteúdo Principal -->
+  <main>
+    <!-- Player de Música Estilo Spotify -->
+    <div id="musicPlayer">
+      <div class="player-header">Always remember us.</div>
+      <div class="player-body">
+        <div class="album-art" style="background-image: url('images/default_album.png');"></div>
+        <div class="track-info">
+          <div class="track-details">
+            <div class="track-name">You</div>
+            <div class="track-artist">Aether</div>
+            <div class="album-name">Nexus</div>
+          </div>
+          <div class="progress-container">
+            <span class="current-time">0:00</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+              <div class="progress-knob"></div>
+            </div>
+            <span class="duration">0:00</span>
+          </div>
+          <div class="controls">
+            <button id="prevMusic" class="control-btn" title="Anterior">&#x23EA;</button>
+            <button id="playPauseMusic" class="control-btn" title="Play/Pausa">&#x23F5;</button>
+            <button id="nextMusic" class="control-btn" title="Próxima">&#x23E9;</button>
+          </div>
+          <div class="volume-controls">
+            <button id="volumeDown" class="control-btn volume-btn" title="Diminuir Volume">–</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.1">
+            <button id="volumeUp" class="control-btn volume-btn" title="Aumentar Volume">+</button>
+            <span id="volumePercent">10%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção da Galeria -->
+    <section id="galeria">
+      <h2>Simplesmente nós ❤️</h2>
+      <!-- Container para fotos e vídeos, com slider -->
+      <div id="mediaSlider" class="media-slider"></div>
+    </section>
+
+    <!-- Seção do Contador -->
+    <section id="contador">
+      <h2>Eu te amo a:</h2>
+      <p id="tempoContador">Calculando...</p>
+      <p>(Desde a primeira vez que nos falamos)</p>
+    </section>
+  
+    <!-- Seção da História -->
+    <section id="historia">
+      <h2>________________</h2>
+      <p>
+  Dizem que o amor começa no olhar, e se for verdade, o meu começou no instante em que vi os teus. A gente se conheceu por acaso… mas nada entre nós foi por acaso. Desde o primeiro instante, Mesmo com aquela sua voz rouca naquele dia (sim, eu ainda vou fazer piada disso pra sempre 😄), eu fiquei completamente perdido em ti.
+Foi amor à primeira vista, mesmo que eu não quisesse admitir. Muito antes do nosso primeiro beijo, meu coração já sabia: era você.
+Lembro daquele fim de ano, quando tudo parecia querer nos afastar… e mesmo assim, ficamos juntos. Contra o tempo, contra as circunstâncias, como se o universo tentasse testar a força do que nascia entre nós. E a gente venceu.
+Hoje, nesse Dia dos Namorados, eu só quero te lembrar o quanto eu te amo. Eu não sou o melhor com palavras, mas faço questão de te mostrar isso todos os dias, com gestos, com cuidado, com presença.
+E mesmo que eu não encontre sempre as palavras certas, prometo que nunca vou poupar as que importam:
+<h4>Eu te amo.</h4>
+Hoje, amanhã e em todos os dias do futuro que eu sonho viver contigo. ❤️
+      </p>
+       <h2>________________</h2>
+    </section>
+
+  </main>
+  
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 - ∞ | Por Aguiar</p>
+  </footer>
+  
+  <!-- Elemento de áudio (invisível) -->
+  <audio id="bgAudio" style="display:none;"></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>

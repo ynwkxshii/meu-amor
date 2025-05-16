@@ -1,0 +1,322 @@
+﻿/* Estilo Geral - Dark AMOLED romântico e confortável */
+body {
+  font-family: "Arial", sans-serif;
+  background: #0A0A0A; /* Preto quase absoluto para conforto visual */
+  margin: 0;
+  padding: 0;
+  color: #D8BFBF; /* Rosa suave para contraste e leitura confortável */
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Cabeçalho refinado e compacto */
+header {
+  background: linear-gradient(90deg, #742F43, #A05668);
+  padding: 8px; /* Reduzi o espaçamento */
+  height: 50px; /* Diminuí a altura */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6rem; /* Reduzi o tamanho da fonte */
+  margin: 0;
+  padding-left: 10px;
+  color: #D8BFBF;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 8px; /* Espaçamento menor entre os itens do menu */
+}
+
+nav a {
+  text-decoration: none;
+  color: #D8BFBF;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #A05668;
+  transform: scale(1.05);
+}
+
+/* Seções */
+section {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Player de Música - Estilo AMOLED */
+#musicPlayer {
+  width: 90%;
+  max-width: 550px; /* Reduzi um pouco para um formato mais compacto */
+  margin: 15px auto;
+  background-color: #742F43;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+#musicPlayer:hover {
+  transform: scale(1.02);
+}
+
+.player-header {
+  background-color: #A05668;
+  padding: 6px 10px; /* Espaçamento menor */
+  color: #D8BFBF;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.player-body {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+}
+
+.album-art {
+  width: 80px; /* Compactei ligeiramente */
+  height: 80px;
+  background-color: #A05668;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+   margin-top: -80px; /* Sobe 20 pixels, ajuste conforme necessário */
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.album-art:hover {
+  transform: scale(1.15);
+}
+
+/* Barra de progresso refinada */
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-top: 6px; /* Pequeno ajuste */
+}
+
+.current-time,
+.duration {
+  font-size: 0.8rem;
+  width: 40px;
+  text-align: center;
+}
+
+.progress-bar {
+  flex: 1;
+  background-color: #A05668;
+  height: 4px;
+  margin: 0 5px;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.progress:hover {
+  background-color: #742F43;
+}
+
+.progress-knob {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 10px; /* Diminuí um pouco */
+  height: 10px;
+  background-color: #D8BFBF;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.progress-knob:hover {
+  background-color: #A05668;
+}
+
+/* Botões minimalistas */
+.controls {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.control-btn {
+  background: transparent;
+  border: none;
+  color: #D8BFBF;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.control-btn:hover {
+  transform: scale(1.05);
+}
+
+#volumePercent {
+  font-size: 0.7rem; /* Reduz o tamanho da fonte */
+}
+
+/* Controles de Volume */
+.volume-controls {
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+.volume-btn {
+  background: transparent;
+  border: none;
+  color: #D8BFBF;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.volume-btn:hover {
+  transform: scale(1.05);
+}
+
+.volume-controls input[type="range"] {
+  width: 75%;
+  max-width: 180px;
+  transition: all 0.3s ease-in-out;
+}
+
+#volumeSlider {
+  height: 4px;
+  appearance: none;
+  background: #A05668;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Personalizando a bolinha do controle de volume */
+#volumeSlider::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #D8BFBF; /* Cor desejada */
+  border-radius: 50%; /* Garante que fique totalmente redonda */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#volumeSlider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #D8BFBF;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#volumeSlider::-webkit-slider-thumb:hover {
+  background: #A05668; /* Efeito ao passar o mouse */
+}
+.volume-controls input:hover {
+  background-color: #A05668;
+}
+
+/* Container da Galeria */
+.media-slider {
+  position: relative;
+  width: 75%;
+  max-width: 700px;
+  height: 350px;
+  margin: 15px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.media-slider:hover {
+  transform: scale(1.02);
+}
+
+/* Rodapé refinado */
+footer {
+  background: linear-gradient(90deg, #A05668, #742F43);
+  text-align: center;
+  padding: 8px;
+  color: #D8BFBF;
+  font-size: 0.75rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    height: 45px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav li {
+    margin: 0 6px;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  .media-slider {
+    width: 90%;
+    height: 280px;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    padding: 6px;
+  }
+
+  #musicPlayer {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .album-art {
+    width: 55px;
+    height: 55px;
+    margin-right: 8px;
+  }
+
+  .control-btn {
+    font-size: 1.4rem;
+  }
+
+  .track-name {
+    font-size: 0.95rem;
+  }
+
+  .track-artist,
+  .album-name {
+    font-size: 0.8rem;
+  }
+}
